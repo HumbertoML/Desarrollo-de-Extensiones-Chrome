@@ -1,6 +1,6 @@
-# Título del Proyecto
+# Plantilla desarrollo de extensiones Chromium
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_extension de chromium para notificar nuevos videos de youtube y scrapear canales_
 
 ## Comenzando 🚀
 
