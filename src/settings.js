@@ -1,23 +1,23 @@
-$(function(){
+$(function () {
     var data;
-    function getSavedChannel(){
-        if(localStorage.youtubechannel) {
+    function getSavedChannel() {
+        if (localStorage.youtubechannel) {
             $("#youtubeLink").attr("placeholder", localStorage.youtubechannel);
         }
         setTimeout(getSavedChannel, 1000);
     }
-    
+
     getSavedChannel();
 
     function checkParameters() {
         //if (data.length < 28) return "Invalid URL";
-        if (data.indexOf("videos") == -1) data = data.replace(/\/featured/i,"") + "/videos";
+        if (data.indexOf("videos") == -1) data = data.replace(/\/featured/i, "") + "/videos";
         if (data.indexOf("youtube") == -1) return "Invalid URL";
-        if (data.substring(data.length, data.length-6) != "videos") return "invalid URL";
+        if (data.substring(data.length, data.length - 6) != "videos") return "invalid URL";
         return true;
     }
 
-    $("#submit").click(function(){
+    $("#submit").click(function () {
         $("#checkResponse").remove();
         data = $("#youtubeLink").val();
         var correct = checkParameters(data);
