@@ -11,33 +11,29 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Navegador Microsoft Edge o Google chrome compatible con Chromium_
 
 ```
-Da un ejemplo
+Microsoft Edge
+```
+```
+Google chrome
 ```
 
 ### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
+_Microsoft Edge_
 ```
-Da un ejemplo
+1. Abre configuraciones y mas ⁝
 ```
-
-_Y repite_
-
 ```
-hasta finalizar
+2. Extensiones
 ```
+```
+3. Habilita "Modo de desarrollador"
+```
+## Ejecutando las pruebas (cargar desempaquetada) ⚙️
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_para ejecutar las pruebas de extensiones chromium en edge sigue los sig pasos._
 
 ### Analice las pruebas end-to-end 🔩
 
@@ -64,8 +60,6 @@ _Agrega notas adicionales sobre como hacer deploy_
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
 ## Contribuyendo 🖇️
 
@@ -83,8 +77,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **HumbertoML** - *Trabajo Inicial* - [villanuevand](https://github.com/HumbertoML)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
@@ -98,8 +91,3 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
 * etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
