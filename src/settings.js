@@ -10,7 +10,7 @@ $(function () {
     getSavedChannel();
 
     function checkParameters() {
-        //if (data.length < 28) return "Invalid URL";
+        if (data.length < 28) return "Invalid URL";
         if (data.indexOf("videos") == -1) data = data.replace(/\/featured/i, "") + "/videos";
         if (data.indexOf("youtube") == -1) return "Invalid URL";
         if (data.substring(data.length, data.length - 6) != "videos") return "invalid URL";
