@@ -9,6 +9,18 @@ var url = "https://www.youtube.com/channel/UCWSKQyNDhvBVrddHIhzx5Zg";
 var videoName = 'ERROR';
 var embedLink = "";
 
+
+// 'window.webkitStorageInfo' is deprecated. Please use 'navigator.webkitTemporaryStorage' or 'navigator.webkitPersistentStorage' instead.
+var storageInfo = null;
+
+if(navigator.webkitTemporaryStorage) {
+  storageInfo = navigator.webkitTemporaryStorage;
+} else if(navigator.webkitPersistentStorage) {
+  storageInfo = navigator.webkitPersistentStorage;
+} else if (window.webkitStorageInfo) {
+  storageInfo = window.webkitStorageInfo;
+}
+
 function getVideoName(response) {
     var index1, index2, index3, videoNameString;
     indexl = response.indexOf(STRINGS.a);
