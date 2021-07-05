@@ -28,6 +28,16 @@ function getVideoName(response) {
     index3 = response.indexOf("</a>", index2);
     videoNameString = response.substring(index2, index3);
     videoName = videoNameString;
+    if(localStorage.lastVideo != videoName) {
+        var notification = new Notification("Nuevo video",{
+            icon: 'https://iconarchive.com/download/i90837/icons8/windows-8/Hands-So-So.ico',
+            body: videoName
+        });
+        notification.onclick = function(){
+            windo.open(bgUrl,"popup","width=640,height=360");
+        };
+    }
+    localStorage.lastVideo = videoName;
 }
 
 function getEmbedLink(response) {
