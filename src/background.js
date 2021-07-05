@@ -21,6 +21,13 @@ if(navigator.webkitTemporaryStorage) {
   storageInfo = window.webkitStorageInfo;
 }
 
+function notify(name,icon,video,link) {
+    var notification = new Notification(name+"has a new video.",{
+        icon: icon,
+        body: "click to open:\n" + video
+    });
+}
+
 function getVideoName(response) {
     var index1, index2, index3, videoNameString;
     indexl = response.indexOf(STRINGS.a);
