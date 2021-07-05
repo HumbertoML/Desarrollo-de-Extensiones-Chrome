@@ -67,10 +67,21 @@ function getEmbedLink(response) {
     videoEmbedString = response.substring(index1, index2);
     embedLink = STRINGS.c + videoEmbedString;
 }
+function getVideoIcon(response) {
+    var index1, index2, index3, index4, index5;
+    index1 = response.indexOf('<ul id="browse-item-primary"');
+    index1_2 = response.indexOf('>',index1);
+    index2 = response.indexOf(STRINGS.e,index1_2);
+    index3 = response.indexOf('>',index2);
+    index4 = response.indexOf('src="',index3) +5;
+    index5 = response.indexOf('"',index4);
+    videoIconLink = "http://" + response.substring(index4 + 2 , index5);
+}
 
 function analyze(response) {
     getVideoName(response);
     getEmbedLink(response);
+    getYouTuberName(response);
 }
 
 function check() {
