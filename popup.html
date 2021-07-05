@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="src/jquery.js"></script>
+    <style type="text/css">
+        html {
+            width: 700px;
+            height: 360px;
+        }
+
+        .link {
+            width: 640px;
+            height: 360px;
+            position: absolute;
+            pointer-events: none;
+            left: 20px;
+        }
+
+        .settings {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 18px;
+            right: 5px;
+            transition: transform 0.3s;
+            outline: 1px solid transparent;
+        }
+
+        .settings:hover {
+            transform: rotate (45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="onClick" class="link" style="pointer-events: auto !important;"></div>
+    <script src="src/getVideos.js"></script>
+    <img id="settingsImg" class="settings" src="src/settings.png" title="Settings" draggable="false" />
+</body>
+
+</html>
