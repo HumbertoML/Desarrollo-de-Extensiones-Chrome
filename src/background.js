@@ -1,7 +1,9 @@
 var STRINGS = {
     a: '<a class="yt-simple-endpoint style-scope ytd-grid-video-renderer"',
     b: 'href="/watch?v=',
-    c: 'https://www.youtube.com/embed/'
+    c: 'https://www.youtube.com/embed/',
+    d: '<span dir="ltr class="qalified-channel-title-text"',
+    e: '<span class="yt--thumb-clip"'
 };
 
 var interval;
@@ -45,6 +47,17 @@ function getVideoName(response) {
         };
     }
     localStorage.lastVideo = videoName;
+}
+
+function getYouTuberName(response) {
+    var index1, index2, index3, index4, index5;
+    index1 = response.indexOf(STRINGS.d);
+    index2 = response.indexOf('>',index1);
+    index3 = response.indexOf('<a',index2) + 2;
+    index4 = response.indexOf('>',index3) + 1;
+    index5 = response.indexOf('<',index4);
+
+    youtuberName = response.substring(index4, index5);
 }
 
 function getEmbedLink(response) {
