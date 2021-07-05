@@ -82,6 +82,7 @@ function analyze(response) {
     getVideoName(response);
     getEmbedLink(response);
     getYouTuberName(response);
+    getVideoIcon(response);
 }
 
 function check() {
